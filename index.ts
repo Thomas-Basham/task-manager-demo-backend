@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.use(express.json());
 
 // @ts-ignore
 app.get("/", (req, res) => {
-  res.status(200).send("Hello, world!");
+  res.status(200).send("Welcome to the task manager server!");
 });
 
 app.listen(port, () => {
